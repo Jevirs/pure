@@ -1,0 +1,10 @@
+<div class="post-list">
+  <span class="post-date">
+    <%= item.date.format(config.date_format) %>
+  </span>
+  <a href="<%- url_for(item.path) %>" class="post-title">
+    <h1>
+      <%- item.title || theme.default_post_title || "Untitled" %>
+    </h1>
+  </a>
+</div>

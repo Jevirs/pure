@@ -1,0 +1,55 @@
+    .content-area {
+        margin-top: $header-height;
+    }
+    
+    .article {
+        @extend .brief;
+    }
+    
+    .article-title {
+        @extend .brief-title;
+    }
+    
+    .article-date {
+        @extend .brief-date;
+    }
+    
+    .article-tag {
+        @extend .brief-tag;
+        text-align: center;
+    }
+    
+    .article-content {
+        text-align: left;
+        font-family: $msyh;
+        margin-top: 3.75rem;
+        h1,
+        h2 {
+            margin: 1.25rem 0;
+        }
+        h3,
+        h4,
+        h5 {
+            margin: 1.0rem 0;
+        }
+        a {
+            color: $sec-color;
+        }
+        p {
+            line-height: 1.75rem;
+        }
+        ul {
+            padding-left: 1.25rem;
+            list-style-type: disc;
+        }
+        ol {
+            padding-left: 1.25rem;
+            list-style-type: decimal;
+        }
+        li {
+            line-height: 1.875rem;
+        }
+        figure {
+            margin: 0.75rem;
+        }
+    }

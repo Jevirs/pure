@@ -1,0 +1,12 @@
+<header class="site-header">
+  <ul class="nav">
+    <% var navs =  theme.nav || config.nav %>
+    <% for (var i in navs){ %>
+    <li>
+      <a href="<%- url_for(navs[i]) %>">
+          <%= __(i)%>
+      </a>
+    </li>
+    <% } %>
+  </ul>
+</header>

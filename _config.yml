@@ -1,0 +1,9 @@
+title: Pure
+subtitle: Clean,Fast,Pure 
+
+nav:
+  home: .
+  archives: archives
+  about: about
+  
+footer: Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and Theme <a href="http://www.jervis.win" target="_blank">Pure</a>

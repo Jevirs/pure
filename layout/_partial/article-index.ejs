@@ -1,0 +1,38 @@
+<div class="brief">
+
+    <h1 class="brief-title">
+      <a href="<%- config.root %><%- item.path %>" rel="bookmark">
+        <%- item.title || theme.default_post_title || "Untitled" %>  
+      </a>
+    </h1>
+   
+    <p class="brief-date">
+    <%= item.date.format(config.date_format) %>
+    </p>
+
+    
+    <div class="brief-desc">
+      <% if (item.description){ %>
+      <p>
+        <%- item.description %>
+      </p>
+      <% } %>
+    </div>
+
+    <% if (item.photos.length) { %>
+    <a href="<%- config.root %><%- item.path %>" class="brief-pic">
+      <img src="<%- item.photos[0] %>" alt="<%- item.title %>" >
+    </a>
+    <% } %>
+
+    <div class="brief-tag">
+      <span>Tags:</span>
+      <% item.tags.each(function(tag){ %>
+      <a href="<%= config.root %>tags/<%= tag.name %>/" rel="tag">
+        <%- tag.name %>
+      </a>
+      <% }); %>
+    </div>
+
+    
+</div>

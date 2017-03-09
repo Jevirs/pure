@@ -1,0 +1,15 @@
+<%
+    var title = '';
+    if (page.tag) title = "#" + page.tag;
+    if (page.archive) title = __('archives');
+%>
+
+<div class="content-area">
+    <div class="archive">
+        <h1 class="page-title"><%- title %></h1>
+        <% page.posts.each(function(item){ %>
+            <%- partial('_partial/article-archive', {item: item}) %>
+        <% }); %>
+    </div>
+    <%- partial('_partial/pagination') %>
+</div>

@@ -1,0 +1,26 @@
+.archive {
+    @extend .article;
+    .page-title {
+        font-family: $heiti;
+        color: $color-text;
+    }
+    .post-list {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin: 1.875rem 0;
+        .post-date {
+            display: inline-block;
+            font-family: $msyh;
+        }
+        .post-title {
+            margin-left: 2.5rem;
+            display: inline-block;
+            font-family: $heiti;
+            border-bottom: 2px solid transparent;
+            &:hover {
+                border-bottom: 2px solid $sec-color;
+            }
+        }
+    }
+}

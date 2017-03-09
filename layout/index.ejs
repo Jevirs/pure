@@ -1,0 +1,12 @@
+<div class="site-content">
+    
+    <div class="banner" >
+
+    </div>
+    
+    <% page.posts.each(function(item){ %>
+      <%- partial('_partial/article-index', {item: item}) %>
+    <% }); %>
+
+    <%- partial('_partial/pagination') %>
+</div>

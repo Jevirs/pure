@@ -1,0 +1,36 @@
+    .site-header {
+        width: 100%;
+        background-color: $sec-color;
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: $header-height;
+        box-shadow: 0 0 5px 0 #333;
+        opacity: 0.8;
+        transition: all 2s;
+        -moz-transition: all 2s;
+        -webkit-transition: all 2s;
+        -o-transition: all 2s;
+    }
+    
+    .nav {
+        float: right;
+        line-height: $header-height;
+        overflow: hidden;
+        font-family: monospace, cursive, fantasy;
+        font-weight: bold;
+        margin: 0 1.875rem;
+        li {
+            float: left;
+            margin-left: 1.875rem;
+            a {
+                color: $white;
+                text-decoration: none;
+                transition: opacity 0.5s ease;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
